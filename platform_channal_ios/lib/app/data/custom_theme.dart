@@ -1,7 +1,3 @@
-// Copyright 2019 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/material.dart';
 
 class CustomTheme {
@@ -18,8 +14,6 @@ class CustomTheme {
   static ThemeData themeData(ColorScheme colorScheme, Color focusColor) {
     return ThemeData(
       colorScheme: colorScheme,
-      // textTheme: _textTheme,
-      // Matches manifest.json colors and background color.
       primaryColor: const Color(0xFF030303),
       appBarTheme: AppBarTheme(
         backgroundColor: colorScheme.background,
@@ -37,7 +31,6 @@ class CustomTheme {
           _lightFillColor.withOpacity(0.80),
           _darkFillColor,
         ),
-        // contentTextStyle: _textTheme.subtitle1!.apply(color: _darkFillColor),
       ),
     );
   }
@@ -65,7 +58,7 @@ class CustomTheme {
     secondaryContainer: Color(0xFF451B6F),
     background: Color(0xFF241E30),
     surface: Color(0xFF1F1929),
-    onBackground: Color(0x0DFFFFFF), // White with 0.05 opacity
+    onBackground: Color(0x0DFFFFFF),
     error: _darkFillColor,
     onError: _darkFillColor,
     onPrimary: _darkFillColor,
